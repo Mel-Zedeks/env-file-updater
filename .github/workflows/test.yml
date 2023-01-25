@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: Mel-Zedeks/env-file-updater@v2.0.0
+        uses: Zedeks-Digital/env-file-updater@main
         with:
           file_name: './testfiles/testenv'
           data: '{ 
