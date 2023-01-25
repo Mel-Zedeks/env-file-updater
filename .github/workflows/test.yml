@@ -1,0 +1,18 @@
+on: [ push ]
+
+jobs:
+  env_file_updater_job:
+    runs-on: ubuntu-latest
+    name: 'A job to edit .env files'
+    steps:
+      - name: Hello world action step
+        id: hello
+        uses: Mel-Zedeks/env-file-updater@v2.0.0
+        with:
+          file_name: './testfiles/.env'
+          data:
+            DB_DATABASE: saprfacility_web
+            DB_USERNAME: root
+            DB_PASSWORD: @Zedeks
+            APP_DEBUG: mel
+          separator: ':'
