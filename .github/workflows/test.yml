@@ -2,7 +2,7 @@ on: [ push ]
 
 jobs:
   env_file_updater_job:
-    runs-on: ubuntu-latest
+    runs-on: [ self-hosted, zedeks_digital ]
     name: 'A job to edit .env files'
     steps:
       - name: Hello world action step
