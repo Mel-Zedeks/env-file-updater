@@ -11,8 +11,8 @@ jobs:
         with:
           file_name: './testfiles/.env'
           data:
-            DB_DATABASE: "saprfacility_web"
-            DB_USERNAME: root
-            DB_PASSWORD: "@Zedeks"
-            APP_DEBUG: mel
+          - DB_DATABASE: "saprfacility_web"
+          - DB_USERNAME: root
+          - DB_PASSWORD: "@Zedeks"
+          - APP_DEBUG: mel
           separator: ':'
